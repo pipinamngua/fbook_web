@@ -3,6 +3,7 @@ var router = express.Router();
 var request = require('request');
 var objectHeaders = require('../helpers/headers');
 var localSession = require('../middlewares/localSession');
+var authorize = require('../middlewares/authorize');
 var async = require('async');
 var cookieParser = require('cookie-parser');
 var i18n = require('i18n');
@@ -316,6 +317,24 @@ router.get('/post/:id-:slug', localSession, function (req, res, next) {
             return res.redirect('/home');
         }
     });
+});
+
+router.get('/index', localSession, authorize.isAuthenticated, function (req, res, next) {
+    res.render('user_choice');
+});
+
+router.get('/user_choice', localSession, function (req, res, next) {
+    var language = req.query.language;
+    var site = req.query.site;
+    
+    res.cookie('lang', language, { maxAge: 900000});
+    req.session.lang = language;
+
+    if (site == 'profile') {
+        res.redirect('users/my_profile');
+    } else {
+        res.redirect('home');
+    }
 });
 
 module.exports = router;

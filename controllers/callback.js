@@ -55,7 +55,7 @@ router.get('/', function(req, res, next) {
                                                     if (!user.item.office_id) {
                                                         res.redirect('home/all_office');
                                                     } else {
-                                                        res.redirect('home?officeId=' + user.item.office_id);
+                                                        res.redirect('/index');
                                                     }
                                                 } else {
                                                     res.redirect('back');

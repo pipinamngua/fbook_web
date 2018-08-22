@@ -73,6 +73,8 @@
 	"Connect": "Connect",
 	"Contact Us": "Contact Us",
 	"Count view": "Count view",
+	"Choose your language": "Choose your language",
+	"Choose site": "Choose site",
 	"Created at": "Created at",
 	"Create Book": "Create Book",
 	"Create category success": "Create category success",
@@ -101,6 +103,7 @@
 	"Edit review": "Edit review",
 	"Edit": "Edit",
 	"Email": "Email",
+	"English": "English",
 	"Enter publish date": "Enter publish date...",
 	"Enter your book author...": "Enter your book author...",
 	"Enter your review": "Enter your review",
@@ -124,6 +127,7 @@
 	"Image": "Image",
 	"Import from Google book": "Import from Google book",
 	"Just follow you": "Just follow you. ",
+	"Japanese": "Japanese",
 	"Keep by": "Keep by",
 	"Language": "Language",
 	"Last": "Last",
@@ -282,6 +286,7 @@
 	"view": "view",
 	"views": "views",
 	"View": "View",
+	"Vietnamese": "Vietnamese",
 	"Waiting approve": "Waiting approve",
 	"waiting books": "waiting books",
 	"Waiting Books": "Waiting Books",
@@ -341,5 +346,9 @@
 	"Post Edit": "Post Edit",
 	"Edit post": "Edit post",
 	"You have shared:": "You have shared:",
-	"Create": "Create"
+	"Create": "Create",
+	"Posts": "Posts",
+	"New Post": "New Post",
+	"No post": "No post",
+	"Can't load offices": "Can't load offices"
 }

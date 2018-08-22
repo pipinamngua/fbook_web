@@ -1,0 +1,27 @@
+<div class="container row gray-bg" style="margin: 0 auto;">
+    <div class="space-50"></div>
+    <h1 align="center"><%= __('Welcome to the best place to read books') %></h1>
+    <div class="container">
+        <div class="card card-container">
+            <p id="profile-name" class="profile-name-card"></p>
+            <form action="user_choice" method="get" class="form-signin">
+
+                <select name="language" class="form-control" value="en">
+                    <option value=""><%= __('Choose your language') %></option>
+                    <option value="en"><%= __('English') %></option>
+                    <option value="vi"><%= __('Vietnamese') %></option>
+                    <option value="jp"><%= __('Japanese') %></option>
+                </select>
+                <div class="space-35"></div>
+                <select name="site" class="form-control" value="home">
+                    <option value=""><%= __('Choose site') %></option>
+                    <option value="profile"><%= __('Profile') %></option>
+                    <option value="home"><%= __('Home') %></option>
+                </select>
+                <div class="space-50"></div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit"><%= __('Submit') %></button>
+            </form>
+        </div>
+    </div>
+</div>
+<link type="text/css" href="/css/form_user_choice.min.css" rel="stylesheet">
